@@ -1,8 +1,8 @@
-# Cookiecutter Data Science
+# Cookiecutter Machine Learning
 
 _A logical, reasonably standardized but flexible project structure for doing and sharing data science work._
 
-**Cookiecutter Data Science (CCDS)** is a tool for setting up a data science project template that incorporates best practices. To learn more about CCDS's philosophy, visit the [project homepage](https://cookiecutter-data-science.drivendata.org/).
+**Cookiecutter Machine Learning (CCML)** is a tool for setting up a machine learning project template that incorporates best practices. This project is based on the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/) project. To learn more about CCDS' philosophy, visit the [CCDS homepage](https://cookiecutter-data-science.drivendata.org/).
 
 > ℹ️ Cookiecutter Data Science v2 has changed from v1. It now requires installing the new cookiecutter-data-science Python package, which extends the functionality of the [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) templating utility. Use the provided `ccds` command-line program instead of `cookiecutter`.
 
@@ -80,16 +80,6 @@ The directory structure of your new project will look something like this (depen
     │   └── train.py            <- Code to train models
     │
     └── plots.py                <- Code to create visualizations   
-```
-
-## Using v1
-
-If you want to use the old v1 project template, you need to have either the cookiecutter-data-science package or cookiecutter package installed. Then, use either command-line program with the `-c v1` option:
-
-```bash
-ccds https://github.com/drivendataorg/cookiecutter-data-science -c v1
-# or equivalently
-cookiecutter https://github.com/drivendataorg/cookiecutter-data-science -c v1
 ```
 
 ## Contributing

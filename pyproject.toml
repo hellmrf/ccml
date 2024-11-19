@@ -1,16 +1,16 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.flit.module]
-name = "ccds"
+[tool.hatch.build.targets.wheel]
+packages = ["ccds"]
 
 [project]
-name = "cookiecutter-data-science"
-version = "2.0.0"
-description = "A logical, reasonably standardized but flexible project structure for doing and sharing data science work."
+name = "ccml"
+version = "0.0.1"
+description = "CookieCutterMachineLearning Template: A logical, reasonably standardized but flexible project structure for doing and sharing data science work."
 authors = [
-  { name = "DrivenData", email = "info@drivendata.org" },
+  { name = "Heliton Martins", email = "helitonmrf@gmail.com" },
 ]
 license = { file = "LICENSE" }
 readme = "README.md"
@@ -35,10 +35,13 @@ dependencies = [
 ]
 
 [project.scripts]
-ccds = "ccds.__main__:main"
+ccml = "ccds.__main__:main"
 
 [project.urls]
-"Homepage" = "https://cookiecutter-data-science.drivendata.org/"
-"Source Code" = "https://github.com/drivendataorg/cookiecutter-data-science/"
-"Bug Tracker" = "https://github.com/drivendataorg/cookiecutter-data-science/issues"
-"DrivenData" = "https://drivendata.co"
+"Homepage" = "https://github.com/hellmrf/ccml"
+"Source Code" = "https://github.com/hellmrf/ccml"
+"Bug Tracker" = "https://github.com/hellmrf/ccml/issues"
+
+[tool.uv]
+package = true
+
